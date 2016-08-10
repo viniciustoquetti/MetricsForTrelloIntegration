@@ -35,6 +35,7 @@ class CardsMovedsCommand extends ContainerAwareCommand
     public function getLists(InputInterface $input)
     {
         return $this->getContainer()->get('trello.lists')->getIdListBy($input->getOption('list'));
+        
     }
 
 }
